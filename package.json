@@ -1,0 +1,37 @@
+{
+  "name": "tape-parity",
+  "version": "0.0.0",
+  "description": "Tape extension that adds a Parity dev chain and Nanoeth helpers",
+  "main": "index.js",
+  "bin": {
+    "tape-parity": "./bin/tape-parity"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "duplexify": "^4.1.1",
+    "eth-sign": "^0.3.4",
+    "nanoeth": "^2.5.2",
+    "parity-binary": "^1.0.3",
+    "parity-spawn": "^1.0.0",
+    "standard": "^14.3.4",
+    "tape": "^5.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "pretest": "standard",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyperdivision/tape-parity.git"
+  },
+  "keywords": [],
+  "author": "Emil Bay <github@tixz.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyperdivision/tape-parity/issues"
+  },
+  "homepage": "https://github.com/hyperdivision/tape-parity#readme"
+}
