@@ -1,5 +1,7 @@
 # `tape-parity`
 
+[![Build Status](https://travis-ci.org/hyperdivision/tape-parity.svg?branch=master)](https://travis-ci.org/hyperdivision/tape-parity)
+
 > Tape extension that adds a Parity dev chain and Nanoeth helpers
 
 ## Usage
