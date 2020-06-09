@@ -48,8 +48,8 @@ Test.prototype.mined = async function mined (tx) {
       if (err) return
 
       unlisten()
-      if (res.status === '0x1') return resolve()
-      return reject(new Error())
+      if (res.status === '0x1') return resolve(res)
+      return reject(new Error(res))
     })
   })
 }

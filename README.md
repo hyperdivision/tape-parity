@@ -36,9 +36,9 @@ connected to the Parity dev chain.
 Fund `address` with `value` wei and optional `data`. Await the transaction to be
 mined. `value` can be `Number`, `BigInt` or hex encoded string.
 
-### `await t.mine(txHash)`
+### `const receipt = await t.mine(txHash)`
 
-Await `txHash` to be mined.
+Await `txHash` to be mined and return the transaction receipt.
 
 ## Install
 
