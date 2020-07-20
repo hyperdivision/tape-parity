@@ -1,8 +1,18 @@
 const test = require('.')
 
 test('fund', async function (t) {
-  await t.fund('0xd27E44f7F4118DB2c7812A363f5B76859c20e0b3', 10000)
+  const acc = await t.keygen()
+  await t.fund(acc.address, 10000)
 
-  t.equal(10000, parseInt(await t.eth.getBalance('0xd27E44f7F4118DB2c7812A363f5B76859c20e0b3')))
+  t.equal(10000, parseInt(await t.eth.getBalance(acc.address)))
+
+  const tx = await t.sign({
+    from: acc.address,
+    to: '0x0000000000000000000000000000000000000000',
+    value: 10000
+  }, acc.privateKey)
+
+  console.log(await t.trace(tx))
+
   t.end()
 })

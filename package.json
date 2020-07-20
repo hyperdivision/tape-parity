@@ -11,10 +11,15 @@
   },
   "dependencies": {
     "duplexify": "^4.1.1",
+    "eth-helpers": "^1.1.0",
+    "eth-keygen": "^1.0.0",
     "eth-sign": "^0.3.4",
+    "nanoassert": "^2.0.0",
     "nanoeth": "^2.5.2",
+    "openethereum-spawn": "^1.0.2",
     "parity-binary": "^1.0.3",
     "parity-spawn": "^1.0.0",
+    "sodium-native": "^3.2.0",
     "standard": "^14.3.4",
     "tape": "^5.0.1"
   },
