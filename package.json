@@ -1,6 +1,6 @@
 {
   "name": "tape-parity",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Tape extension that adds a Parity dev chain and Nanoeth helpers",
   "main": "index.js",
   "bin": {
@@ -16,14 +16,13 @@
     "eth-sign": "^0.3.4",
     "nanoassert": "^2.0.0",
     "nanoeth": "^2.5.2",
+    "openethereum-binary": "^2.0.4",
     "openethereum-spawn": "^1.0.2",
-    "parity-binary": "^1.0.3",
-    "parity-spawn": "^1.0.0",
+    "resolve": "1.19.0",
     "sodium-native": "^3.2.0",
     "standard": "^14.3.4",
     "tape": "^5.0.1"
   },
-  "devDependencies": {},
   "scripts": {
     "pretest": "standard",
     "test": "node test.js"
